@@ -1,18 +1,18 @@
 # CEG3006 V2P Safety Project
 
 ## Project Idea
-This project explores a Vehicle-to-Pedestrian (V2P) communication system designed to improve safety for pedestrians, cyclists and wheelchair users.
+This project explores a Vehicle-to-Pedestrian (V2P) communication system designed to improve safety for pedestrians and cyclists.
 
 The goal is to design a system where pedestrians can broadcast their presence to nearby vehicles, allowing drivers to receive warnings when a potential collision risk is detected.
 
 ## Planned System Architecture
 Components of the proposed system:
 
-- Pedestrian device (smartphone or wearable)
-- Wireless communication between pedestrian and vehicle
+- Pedestrian device (smartphone)
+- Wireless communication between pedestrian and vehicle via traffic system (pedestrian -> traffic system -> vehicle)
 - Vehicle onboard receiver
-- Collision risk detection algorithm
-- Driver and pedestrian warning alerts
+- Collision risk detection algorithm (AI prediction)
+- Driver warning alerts
 
 ## Repository Structure
 
