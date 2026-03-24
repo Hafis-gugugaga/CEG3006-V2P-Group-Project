@@ -126,26 +126,99 @@ Instead, Uu is used as a support communication channel for functions such as:
 - live backend service updates
 
 #### C. Vehicle-side processing subsystem
-This subsystem is the decision-making core of the system.
+This subsystem is the decision-making core of the system. Its role is to receive the pedestrian’s live safety message, interpret the data, assess the level of risk, and decide whether a warning should be issued to the driver.
 
 ##### Main Components
 - C-V2X receiver / onboard unit
+- PC5 message reception module
 - Message decoder
 - Priority evaluation module
 - Collision-risk assessment module
 - Warning decision logic
 
 #### What it does
-
-When the vehicle receives the pedestrian’s awareness message, it must determine whether the pedestrian poses a possible collision risk.
+When the vehicle receives a pedestrian awareness message, it must determine whether the pedestrian poses a possible collision risk.
 
 So the vehicle-side subsystem performs four main tasks:
 ##### 1. Message reception
-The vehicle’s onboard unit receives the pedestrian’s C-V2X message over PC5.
+The vehicle’s onboard unit receives the pedestrian’s live safety message over PC5.
+
+Assumption:
+The vehicle is equipped with a C-V2X-capable onboard unit (OBU) that can receive PC5-based pedestrian safety messages. While such capability exists in some conneted-vehicle deployments, it is not assumed to be standard in all consumer vehicles today. Therefore, this project treats the OBU as an available vehicle-side component within the propsed system architecture.
+
+This is the primary real-time input used by the vehicle to detect nearby vulnerable pedestrians in situations such as:
+- zebra crossings
+- school zones
+- blind spots
+- unexpected crossing movement
 
 ##### 2. Message decoding
+The received message is decoded to extract relevant pedestrian information, such as:
+- pedestrian position
+- walking direction
+- walking speed
+- priority class
+- crossing state
+- zone type
+
+This information allows the vehicle to understand not only where the pedestrian is, but also whether the pedestrian belongs to a higher-priority vulnerable group.
+
 ##### 3. Risk assessment
+The vehicle then compares the pedestrian’s live state with vehicle-side data, such as:
+- vehicle speed
+- vehicle heading
+- vehicle position
+- distance to crossing
+- estimated arrival time at the crossing
+
+Using these inputs, the system estimates whether the pedestrian and vehicle are likely to enter the same conflict zone within the next few seconds.
+
 ##### 4. Priority-aware decision making
+The system does not treat all pedestrians equally.
+If the pedestrian is classified as high priority, the warning threshold becomes more conservative.
+
+For example:
+- a student in a school zone may trigger an earlier warning
+- an elderly pedestrian may trigger a larger safety buffer
+- a wheelchair user or other disabled pedestrian may cause the system to assume slower crossing speed and longer crossing time
+
+So the vehicle-side controller is not just a receiver.
+It is the intelligence layer that turns live pedestrian data into a warning decision.
+
+#### D. In-vehicle warning subsystem
+This subsystem is the final response layer. Its purpose is to ensure that once a risk has been detected, the driver receives a warning in a clear and timely manner.
+
+##### Main components
+- V2P warning controller
+- CAN bus
+- driver HMI
+
+##### What it does
+After the vehicle-side processing subsystem detects a risk using the live PC5 safety message, the warning must be delivered to the driver through the vehicle’s internal systems.
+
+This means:
+- PC5 is used only for external pedestrian-to-vehicle safety communication
+- once the risk is confirmed, the warning is transferred internally through the in-vehicle network
+- CAN bus is used as the main internal communication path for warning delivery
+
+##### What CAN does in the system
+Once the vehicle controller determines that a warning is necessary, it sends an internal warning message across the vehicle network to one or more endpoints, such as:
+- instrument cluster
+- dashboard warning light
+- buzzer
+- ADAS display
+- steering or seat alert module
+
+The system can define multiple driver-warning levels:
+Level 1: pedestrian detected nearby
+Level 2: high-priority pedestrian approaching crossing
+Level 3: immediate collision risk
+
+This is where the priority logic becomes visible to the driver.
+
+For example:
+- a normal pedestrian may trigger a Level 1 or Level 2 alert
+- a student in a school zone, elderly pedestrian, or disabled pedestrian may trigger an earlier or stronger Level 2 or Level 3 alert
 
 ## Repository Structure
 
