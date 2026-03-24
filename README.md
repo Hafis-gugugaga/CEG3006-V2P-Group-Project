@@ -20,14 +20,17 @@ This project explores a Vehicle-to-Pedestrian (V2P) communication system designe
 The goal is to design a system where pedestrians can broadcast their presence to nearby vehicles, allowing drivers to receive warnings when a potential collision risk is detected.
 
 ## Planned System Architecture
-Components of the proposed system:
+Pedestrian-side subsystem
+Smartphone app, sensors, profile manager, and message generation
 
-- Pedestrian-side technology
-- The smartphone app, sensors, and user profile system
-- Pedestrian-to-vehicle communication technology
-- The wireless link that sends safety information from the pedestrian to the vehicle
-- In-vehicle technology
-- The controller and in-car network that turn the received message into a driver warnin
+Pedestrian-to-vehicle communication subsystem
+Direct C-V2X PC5 link that carries pedestrian awareness messages to nearby vehicles
+
+Vehicle-side processing subsystem
+Onboard receiver, message decoder, collision-risk assessment, and priority logic
+
+In-vehicle warning subsystem
+In-vehicle controller/network that sends the warning to the driver interface, such as dashboard, buzzer, or ADAS warning display
 
 ## Repository Structure
 
