@@ -34,7 +34,7 @@ In-vehicle warning subsystem
 In-vehicle controller/network that sends the warning to the driver interface, such as dashboard, buzzer, or ADAS warning display
 
 ### System Architecture
-#### Pedestrian-side subsystem
+#### A. Pedestrian-side subsystem
 This subsystem is the origin of the safety message.
 Its job is to sense the pedestrian’s situation and convert it into a form the vehicle can understand.
 
@@ -44,7 +44,108 @@ Its job is to sense the pedestrian’s situation and convert it into a form the 
 - User profile (where priority is decided)
 - Message generation module (alert system)
 
+##### What it does
+The pedestrian carries a smartphone with the V2P app installed.
+The app continuously monitors basic movement and location information, such as:
+- current position
+- walking speed
+- movement direction
+- whether the user is near a school-zone crossing or zebra crossing
 
+The app also stores a priority profile for the pedestrian.
+- students in school zones
+- elderly pedestrians
+- persons with disabilities, including physical, visual, and cognitive conditions
+
+This priority profile is important because it changes how cautiously the system behaves.
+A higher-priority pedestrian causes the vehicle to react earlier or with a stronger warning.
+
+##### Why a smartphone makes sense
+A smartphone is a realistic pedestrian device because it already contains:
+- GNSS / location functions
+- motion sensors
+- local processing capability
+- a user interface for registration and alerts
+
+#### B. Pedestrian-to-vehicle communication system
+This subsystem is the direct wireless safety link between the pedestrian and the vehicle.
+
+##### Main technology
+- C-V2X
+- PC5 interface for direct real-time safety communication
+- Uu interface for backend synchronization and live updates
+
+##### What it does
+The communication subsystem allows the pedestrian’s smartphone to exchange information with the wider V2P system using two different interfaces with different purposes.
+
+- PC5 is used for the live safety function of the system. Through PC5, the pedestrian’s smartphone sends safety-related messages directly to nearby vehicles. This direct path is used for time-critical situations where a vehicle must be warned immediately, such as at zebra crossings or in school zones.
+- Uu is used for non-time-critical support functions. This includes backend synchronization, user profile updates, zone or map updates, system configuration updates, and optional cloud-based services.
+
+In this design, the two interfaces are not treated as interchangeable. Instead, each is assigned a specific role:
+- PC5 handles urgent, local, real-time safety communication
+- Uu handles network-based backend communication and live service updates
+
+##### Important assumption
+A clear assumption is made in this project that the pedestrian smartphone is capable of PC5-based direct C-V2X communication.
+
+This assumption is necessary because PC5 is not yet widely available as a standard feature in mainstream consumer smartphones. Therefore, whenever PC5 is mentioned in this project, it should be understood as an assumed capability for a future-ready or specialized smartphone platform.
+
+By contrast, Uu-based communication is treated as realistic using existing mobile network connectivity, since normal cellular communication is already common on modern smartphones.
+
+##### Why PC5 is the core choice
+The main purpose of this project is to support:
+- direct pedestrian-to-vehicle warning
+- zebra crossing safety
+- school-zone safety
+- fast warning in short decision windows
+
+Because of this, the main warning path should be direct and local, rather than dependent on routing through the wider mobile network. This is why PC5 is chosen as the primary interface for the live safety component of the system.
+
+Using PC5 allows nearby vehicles to receive pedestrian safety messages quickly, which is important for situations where the driver must react immediately.
+
+##### What message is transmitted
+The pedestrian smartphone periodically generates and transmits a pedestrian awareness message. This message may include:
+- temporary session ID
+- current location
+- walking speed
+- movement direction
+- crossing status
+- priority category
+- zone type
+
+These messages allow the receiving vehicle to determine whether the pedestrian is nearby, whether the pedestrian is in a vulnerable group, and whether there is a possible collision risk.
+
+##### Role of Uu in the architecture
+The Uu interface is not used as the main urgent warning path in this project.
+
+Instead, Uu is used as a support communication channel for functions such as:
+- pedestrian profile synchronization
+- school-zone or map database updates
+- system configuration updates
+- cloud logging and analytics
+- live backend service updates
+
+#### C. Vehicle-side processing subsystem
+This subsystem is the decision-making core of the system.
+
+##### Main Components
+- C-V2X receiver / onboard unit
+- Message decoder
+- Priority evaluation module
+- Collision-risk assessment module
+- Warning decision logic
+
+#### What it does
+
+When the vehicle receives the pedestrian’s awareness message, it must determine whether the pedestrian poses a possible collision risk.
+
+So the vehicle-side subsystem performs four main tasks:
+##### 1. Message reception
+The vehicle’s onboard unit receives the pedestrian’s C-V2X message over PC5.
+
+##### 2. Message decoding
+##### 3. Risk assessment
+##### 4. Priority-aware decision making
 
 ## Repository Structure
 
