@@ -1,3 +1,6 @@
+<img width="158" height="65" alt="image" src="https://github.com/user-attachments/assets/9a659513-045f-49f8-b821-ec974fce6471" />
+
+
 # CEG3006 V2P Safety Project
 
 ## System Integration
