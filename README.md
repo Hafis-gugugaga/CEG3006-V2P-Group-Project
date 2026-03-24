@@ -22,11 +22,12 @@ The goal is to design a system where pedestrians can broadcast their presence to
 ## Planned System Architecture
 Components of the proposed system:
 
-- Pedestrian device (smartphone)
-- Wireless communication between pedestrian and vehicle via traffic system (pedestrian -> traffic system -> vehicle)
-- Vehicle onboard receiver
-- Collision risk detection algorithm (AI prediction)
-- Driver warning alerts
+- Pedestrian-side technology
+- The smartphone app, sensors, and user profile system
+- Pedestrian-to-vehicle communication technology
+- The wireless link that sends safety information from the pedestrian to the vehicle
+- In-vehicle technology
+- The controller and in-car network that turn the received message into a driver warnin
 
 ## Repository Structure
 
@@ -36,7 +37,7 @@ docs/
 research/
     literature review and references
 
-decision-log/
+DecisionLog.md
     project development decisions
 
 ## Next Steps
