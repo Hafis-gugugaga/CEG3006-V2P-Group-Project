@@ -38,3 +38,7 @@ Entire team
 
 ## 24th Marh, 2026
 
+### Trigger / Problem
+Refining of the Idea
+
+Since the assignment specifically requires a V2P application, it is more appropriate to implement a pedestrain-vehicle system rather than a pedestrian-traffic-vehicle system.
