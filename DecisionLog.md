@@ -2,7 +2,7 @@
 
 
 
-## Mar 13th, 2026
+## Log 1 --- Mar 13th, 2026
 
 ### Trigger / Problem:
 Initial project brainstorming. The team needed to define the target users and scope of the V2P safety application.
@@ -36,9 +36,19 @@ Entire team
 
 
 
-## 24th Marh, 2026
-
-### Trigger / Problem
-Refining of the Idea
+## Log 2 --- 24th Marh, 2026
 
 Since the assignment specifically requires a V2P application, it is more appropriate to implement a pedestrain-vehicle system rather than a pedestrian-traffic-vehicle system.
+
+System Architecture to be used:
+- Pedestrian side
+- Pedestrian-Vehicle side
+- Vehicle side
+- In vehicle warning subsystem
+
+Rejection
+- BLE due to its short range, unpredictable latency, possible unstable connection
+
+Initial decision:
+- Only use either PC5 or Uu only
+- Later decided to hybrid (use both PC5 and Uu)
