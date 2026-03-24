@@ -1,6 +1,3 @@
-<img width="158" height="65" alt="image" src="https://github.com/user-attachments/assets/9a659513-045f-49f8-b821-ec974fce6471" />
-
-
 # CEG3006 V2P Safety Project
 
 ## System Integration
@@ -222,6 +219,13 @@ This is where the priority logic becomes visible to the driver.
 For example:
 - a normal pedestrian may trigger a Level 1 or Level 2 alert
 - a student in a school zone, elderly pedestrian, or disabled pedestrian may trigger an earlier or stronger Level 2 or Level 3 alert
+
+### Hardware components and parameters
+<img width="1269" height="335" alt="image" src="https://github.com/user-attachments/assets/9bf2592c-04d0-462c-9258-63fc18ff282b" />
+[Table 1: BLE vs. C-V2X]
+
+<img width="987" height="190" alt="image" src="https://github.com/user-attachments/assets/5526cfbe-a6b6-44a6-a6ff-b282e9af19f4" />
+[Table 2: C-V2X PC5 vs. C-V2X Uu]
 
 ## Repository Structure
 
