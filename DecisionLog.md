@@ -36,7 +36,7 @@ Entire team
 
 
 
-## Log 2 --- 24th Marh, 2026
+## Log 2 --- 24th March, 2026
 
 Since the assignment specifically requires a V2P application, it is more appropriate to implement a pedestrain-vehicle system rather than a pedestrian-traffic-vehicle system.
 
