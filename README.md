@@ -239,6 +239,7 @@ This early warning allows the driver to slow down and prepare to stop before rea
 ## AI Usage
 ### ChatGPT:
 Prompting AI to find keywords for searching relevant topics and technologies
+
 Input:
 <img width="827" height="1006" alt="image" src="https://github.com/user-attachments/assets/94145a4c-5d79-4859-a90a-3ebfaf05ffe3" />
 
