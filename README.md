@@ -243,6 +243,7 @@ Prompting AI to find keywords for searching relevant topics and technologies
 Input:
 <img width="827" height="1006" alt="image" src="https://github.com/user-attachments/assets/94145a4c-5d79-4859-a90a-3ebfaf05ffe3" />
 
+
 Output:
 <img width="900" height="946" alt="image" src="https://github.com/user-attachments/assets/e6685837-5f23-4c3c-a3c9-d0aacef667bc" />
 <img width="900" height="684" alt="image" src="https://github.com/user-attachments/assets/8f525fbf-f3ee-41e8-8fd8-560985cf3c7d" />
