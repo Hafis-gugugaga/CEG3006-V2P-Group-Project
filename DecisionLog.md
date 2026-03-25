@@ -2,35 +2,24 @@
 
 
 
-## Log 1 --- Mar 13th, 2026
+## Log 1 — 13 Mar 2026
 
-### Trigger / Problem:
-Initial project brainstorming. The team needed to define the target users and scope of the V2P safety application.
+Trigger / Problem
+Initial project brainstorming. The team needed to define the target users of the V2P safety application.
 
+Options / Alternatives
 
-### Options / Alternatives:
-1. General pedestrian safety system for all users.
-2. System focused on vulnerable road users (disabled, elderly, students).
-3. System including emergency vehicle communication. (Rejected)
-4. System including speed limit zone notifications. (Rejected)
+General pedestrian safety system for all users
+System focused on vulnerable road users
 
+Evaluation Criteria
+Relevance to V2P objective, clarity of target users, project scope
 
-### Evaluation Criteria:
-Relevance to V2P objective, system complexity, implementation feasibility, and alignment with project scope.
+Decision and Rationale
+The team decided to focus on vulnerable road users instead of all pedestrians. This gave the project a clearer scope and stronger justification.
 
-
-### Decision and Rationale:
-The team decided to focus the application on vulnerable road users, such as handicapped users, elderly pedestrians, and students at crossings.
-
-Two alternative features were discussed but rejected:
-• Emergency vehicle notification – rejected because it mainly involves Vehicle-to-Vehicle (V2V) communication rather than V2P.
-• Speed limit zone warning – rejected because it would require Vehicle-to-Infrastructure (V2I) integration with traffic systems, which is outside the project scope.
-
-This decision keeps the system aligned with the V2P safety objective while maintaining manageable system complexity.
-
-
-### Team Member
-Entire team
+AI Usage (if any)
+AI was used for idea generation, but the team decided the final focus.
 
 
 
