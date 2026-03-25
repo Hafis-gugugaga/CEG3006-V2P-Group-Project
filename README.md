@@ -7,7 +7,6 @@ Smart Priority V2P Safety System
 
 The proposed solution is a Vehicle-to-Pedestrian (V2P) safety application designed to improve road safety for vulnerable pedestrians, especially students in school zones, elderly users, and person with disabilities, including physical, visual, and cognitive conditions. The system allows direct real-time communication between pedestrian smartphones and nearby vehicles to improve driver awareeness and reduce accident risks at zebra crossings, blind spot, and other high-risk areas.
 
-[To be refined]
 The application operates in two modes: pedestrian mode and vehicle mode. Pedestrian devices continuously broadcast location and status information using short-range wireless communication (e.g., Bluetooth Low Energy or Cellular V2X). When a pedestrian approaches a crossing, the system sends alerts to nearby vehicles. Drivers receive warnings if pedestrians are crossing unexpectedly, approaching blind spots, or jaywalking. At the same time, pedestrians receive vibration or sound notifications when vehicles are approaching.
 
 To prevent unnecessary distractions, the application minimizes visual notifications on the pedsterian's device and continues transmitting safety information in the background. A key feature of the system is its priority-based warning logic. Users can register a pedestrian profile, allowing the system to assign higher priority to vulnerable groups such as school children, elderly pedestrians, wheelchair users, and visually impaired users. When such users are detected, vehicles receive earlier or stronger alerts to encourage more cautious driver response.
@@ -227,20 +226,13 @@ For example:
 <img width="987" height="190" alt="image" src="https://github.com/user-attachments/assets/5526cfbe-a6b6-44a6-a6ff-b282e9af19f4" />
 [Table 2: C-V2X PC5 vs. C-V2X Uu]
 
+### Illustration
+<img width="857" height="895" alt="ceg3006_project" src="https://github.com/user-attachments/assets/26b8d8ac-de7a-4e02-a135-032a249a2979" />
+
+
 ## Repository Structure
 
-docs/
-    system architecture diagrams
+/CEG3006_flowchart.png
 
-research/
-    literature review and references
-
-DecisionLog.md
+/DecisionLog.md
     project development decisions
-
-## Next Steps
-
-- Research existing V2P technologies
-- Design system architecture
-- Define communication protocol
-- Create system diagrams
