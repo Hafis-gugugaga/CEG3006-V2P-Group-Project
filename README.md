@@ -300,5 +300,7 @@ So far, no obvious hallucinations were identified in the AI-generated responses,
 
 ## Reference
 De Ponte Müller, F., Munoz Diaz-Ropero, E., Sand, S., Böker, C., & Merk, L. (2022). Towards vision zero - V2X communication for active vulnerable road user protection. expert verlag. https://elib.dlr.de/190358/
+
 Gelbal, S. Y., Cantas, M. R., Guvenc, B. A., Guvenc, L., Surnilla, G., & Zhang, H. (2023). Mobile safety application for pedestrians. https://arxiv.org/abs/2305.17575
+
 Arena, F., Pau, G., & Severino, A. (2020). V2X communications applied to safety of pedestrians and vehicles. Journal of Sensor and Actuator Networks, 9(1), 3. https://doi.org/10.3390/jsan9010003
