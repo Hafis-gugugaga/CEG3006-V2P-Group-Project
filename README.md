@@ -267,6 +267,16 @@ Idea relevance check + Advice
 ##### Output:
 <img width="700" height="721" alt="image" src="https://github.com/user-attachments/assets/1e7fc1f2-b30b-4f15-a01d-1ad3fda31294" />
 
+### Identified weaknesses or hallucinations
+#### 1.
+One weakness identified in the AI-generated suggestions was that, although the AI was effective at proposing technically interesting features and system ideas, it did not always fully consider practical implementation constraints and the user’s point of view. For example, an earlier suggestion proposed sending alerts to both pedestrians and drivers. While this sounded reasonable from a general safety perspective, it was less suitable for the intended target users of this project, especially persons with disabilities or cognitive conditions, since the driver is the one in the best position to take immediate action. This showed that AI can generate many possible ideas quickly, but those ideas still require human judgment to evaluate whether they are practical, accessible, and appropriate for the real-world users of the system.
+
+#### 2.
+Although the AI could suggest ideas quickly, it often stayed too general unless guided with specific questions and technical keywords. More useful responses were obtained only after prompting with focused terms such as C-V2X, PC5, Uu, and OBU. This shows that AI can assist with exploration, but it still relies heavily on the user to steer it toward the depth and direction required.
+
+#### 3.
+So far, no obvious hallucinations were identified in the AI-generated responses, as the points provided were generally supported by cited sources. This made the information more trustworthy and easier to verify during the design process. However, the presence of sources did not automatically guarantee that every suggestion was fully suitable for the project. The responses still needed to be checked for relevance, practicality, and alignment with the project scope. Therefore, although no major hallucinations were encountered, human review was still necessary to confirm that the information was accurate and appropriate for the intended application.
+
 ## Repository Structure
 
 /CEG3006_flowchart.png
