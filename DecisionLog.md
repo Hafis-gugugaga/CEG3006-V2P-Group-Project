@@ -52,3 +52,11 @@ Rejection
 Initial decision:
 - Only use either PC5 or Uu only
 - Later decided to hybrid (use both PC5 and Uu)
+
+## Log 3 --- 25th March, 2026
+
+Updated brief description
+
+System architecture flowchart
+
+Early sketches of diagram
