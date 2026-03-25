@@ -59,4 +59,8 @@ Updated brief description
 
 System architecture flowchart
 
-Early sketches of diagram
+Sketches of early + final diagram the system
+
+AI usage of the project
+
+Finalized to use audio warning on the vehicle side --- to not distract the driver with the visual
