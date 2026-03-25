@@ -239,15 +239,33 @@ This early warning allows the driver to slow down and prepare to stop before rea
 ## AI Usage
 ### ChatGPT:
 Prompting AI to find keywords for searching relevant topics and technologies
+AI was used for further idealization and language correction / clarification.
 
-#### Input:
+#### Prompt 1
+##### Input:
 <img width="827" height="1006" alt="image" src="https://github.com/user-attachments/assets/94145a4c-5d79-4859-a90a-3ebfaf05ffe3" />
 
-
-#### Output:
+##### Output:
 <img width="900" height="946" alt="image" src="https://github.com/user-attachments/assets/e6685837-5f23-4c3c-a3c9-d0aacef667bc" />
 <img width="900" height="684" alt="image" src="https://github.com/user-attachments/assets/8f525fbf-f3ee-41e8-8fd8-560985cf3c7d" />
 <img width="900" height="864" alt="image" src="https://github.com/user-attachments/assets/b6dcc31f-d14c-44ba-ab1d-a774edd367f2" />
+
+#### Prompt 2
+##### Input:
+<img width="790" height="1234" alt="image" src="https://github.com/user-attachments/assets/3a50c949-3875-4052-9635-58182f815392" />
+
+##### Output:
+<img width="737" height="435" alt="image" src="https://github.com/user-attachments/assets/c1052a76-9b6b-45a7-853e-c78cb73086a6" />
+<img width="732" height="923" alt="image" src="https://github.com/user-attachments/assets/5be510e7-abe6-4505-a8aa-ca0bea680d23" />
+
+Idea relevance check + Advice
+
+#### Prompt 3
+##### Input:
+<img width="534" height="180" alt="image" src="https://github.com/user-attachments/assets/aa208527-accf-4dd0-b279-fc48dd8f2225" />
+
+##### Output:
+<img width="700" height="721" alt="image" src="https://github.com/user-attachments/assets/1e7fc1f2-b30b-4f15-a01d-1ad3fda31294" />
 
 ## Repository Structure
 
