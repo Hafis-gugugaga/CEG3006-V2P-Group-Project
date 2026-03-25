@@ -135,7 +135,7 @@ This subsystem is the decision-making core of the system. Its role is to receive
 - Collision-risk assessment module
 - Warning decision logic
 
-#### What it does
+##### What it does
 When the vehicle receives a pedestrian awareness message, it must determine whether the pedestrian poses a possible collision risk.
 
 So the vehicle-side subsystem performs four main tasks:
