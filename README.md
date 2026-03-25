@@ -226,7 +226,14 @@ For example:
 <img width="987" height="190" alt="image" src="https://github.com/user-attachments/assets/5526cfbe-a6b6-44a6-a6ff-b282e9af19f4" />
 [Table 2: C-V2X PC5 vs. C-V2X Uu]
 
-### Illustration
+### Use case
+A car is travelling along an urban road toward a zebra crossing near a residential area. At the same time, a pedestrian with a verified priority profile, such as a wheelchair user or a person with visual or cognitive disabilities, is approaching the crossing while carrying a smartphone running the Smart Priority V2P Safety System. The smartphone silently transmits the pedestrian’s location, movement, and priority status to nearby vehicles through direct V2P communication.
+
+The vehicle’s onboard unit receives this safety message and combines it with vehicle data such as speed, heading, and position to assess collision risk. Because the pedestrian belongs to a high-priority vulnerable group, the system applies a more cautious warning threshold. As the car approaches the same conflict zone, the system detects potential risk and issues an audio warning to the driver, such as “Warning. Vulnerable pedestrian ahead.”
+
+This early warning allows the driver to slow down and prepare to stop before reaching the crossing. In this way, the system improves protection for pedestrians who may need more time, space, and caution from approaching vehicles.
+
+### Simple illustration
 <img width="857" height="895" alt="ceg3006_project" src="https://github.com/user-attachments/assets/26b8d8ac-de7a-4e02-a135-032a249a2979" />
 
 
