@@ -236,6 +236,16 @@ This early warning allows the driver to slow down and prepare to stop before rea
 ### Simple illustration
 <img width="857" height="895" alt="ceg3006_project" src="https://github.com/user-attachments/assets/26b8d8ac-de7a-4e02-a135-032a249a2979" />
 
+## AI Usage
+### ChatGPT:
+Prompting AI to find keywords for searching relevant topics and technologies
+Input:
+<img width="827" height="1006" alt="image" src="https://github.com/user-attachments/assets/94145a4c-5d79-4859-a90a-3ebfaf05ffe3" />
+
+Output:
+<img width="900" height="946" alt="image" src="https://github.com/user-attachments/assets/e6685837-5f23-4c3c-a3c9-d0aacef667bc" />
+<img width="900" height="684" alt="image" src="https://github.com/user-attachments/assets/8f525fbf-f3ee-41e8-8fd8-560985cf3c7d" />
+<img width="900" height="864" alt="image" src="https://github.com/user-attachments/assets/b6dcc31f-d14c-44ba-ab1d-a774edd367f2" />
 
 ## Repository Structure
 
