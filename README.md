@@ -235,4 +235,4 @@ For example:
 /CEG3006_flowchart.png
 
 /DecisionLog.md
-    project development decisions
+- project development decisions
