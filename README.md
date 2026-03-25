@@ -13,10 +13,8 @@ To avoid unnecessary distraction, the pedestrian’s smartphone operates mainly 
 
 Unlike traditional pedestrian detection systems that rely only on onboard sensors such as cameras or radar, this solution uses direct pedestrian-to-vehicle communication, which can improve detection reliability in low-visibility, obstructed, or crowded environments. While similar V2P concepts have been explored in cooperative intelligent transportation systems (C-ITS), this proposal emphasizes accessibility, vulnerability-based prioritization, and smartphone-based deployment, making it a practical and scalable solution for urban safety applications.
 
-## Project Idea
-This project explores a Vehicle-to-Pedestrian (V2P) communication system designed to improve safety for pedestrians and cyclists.
+## Literature Review
 
-The goal is to design a system where pedestrians can broadcast their presence to nearby vehicles, allowing drivers to receive warnings when a potential collision risk is detected.
 
 ## Planned System Architecture
 ### Components
@@ -283,3 +281,5 @@ So far, no obvious hallucinations were identified in the AI-generated responses,
 
 /DecisionLog.md
 - project development decisions
+
+## Reference
